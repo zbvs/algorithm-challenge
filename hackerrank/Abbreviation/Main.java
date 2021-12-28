@@ -61,10 +61,11 @@ public class Solution {
     }
 
     public static void main(String[] args) throws IOException {
-        InputStream targetStream = new ByteArrayInputStream(getData().getBytes());
+        
 
         //BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         //BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+		InputStream targetStream = new ByteArrayInputStream(getData().getBytes());
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(targetStream));
         BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 
